@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7283267A57E500437DED /* AppDelegate.swift */; };
 		AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7285267A57E500437DED /* SceneDelegate.swift */; };
-		AD1E7288267A57E500437DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7287267A57E500437DED /* ViewController.swift */; };
 		AD1E728B267A57E500437DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E7289267A57E500437DED /* Main.storyboard */; };
 		AD1E728D267A57E800437DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1E728C267A57E800437DED /* Assets.xcassets */; };
 		AD1E7290267A57E800437DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E728E267A57E800437DED /* LaunchScreen.storyboard */; };
@@ -21,6 +20,8 @@
 		AD1E734C267AB39E00437DED /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E734B267AB39E00437DED /* Images.swift */; };
 		AD1E7351267AB45700437DED /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7350267AB45700437DED /* Dealer.swift */; };
 		AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7355267AB75500437DED /* FirstPhoto.swift */; };
+		AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E735D267ABBBC00437DED /* VehicleListController.swift */; };
+		AD1E7367267ABC0A00437DED /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7366267ABC0A00437DED /* VehicleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		AD1E7280267A57E500437DED /* CarfaxTechAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarfaxTechAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1E7283267A57E500437DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1E7285267A57E500437DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD1E7287267A57E500437DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD1E728A267A57E500437DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD1E728C267A57E800437DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD1E728F267A57E800437DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		AD1E734B267AB39E00437DED /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AD1E7350267AB45700437DED /* Dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		AD1E7355267AB75500437DED /* FirstPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPhoto.swift; sourceTree = "<group>"; };
+		AD1E735D267ABBBC00437DED /* VehicleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListController.swift; sourceTree = "<group>"; };
+		AD1E7366267ABC0A00437DED /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		AD1E7282267A57E500437DED /* CarfaxTechAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E7365267ABBF500437DED /* TableViewCells */,
 				AD1E72C5267AAA4900437DED /* ViewControllers */,
 				AD1E72C4267AAA3D00437DED /* SupportingFiles */,
 				AD1E72C3267AAA2E00437DED /* Storyboards */,
@@ -181,9 +184,17 @@
 		AD1E72C5267AAA4900437DED /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD1E7287267A57E500437DED /* ViewController.swift */,
+				AD1E735D267ABBBC00437DED /* VehicleListController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD1E7365267ABBF500437DED /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E7366267ABC0A00437DED /* VehicleCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,12 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1E7367267ABC0A00437DED /* VehicleCell.swift in Sources */,
 				AD1E734C267AB39E00437DED /* Images.swift in Sources */,
-				AD1E7288267A57E500437DED /* ViewController.swift in Sources */,
 				AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */,
 				AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */,
 				AD1E7351267AB45700437DED /* Dealer.swift in Sources */,
 				AD1E72BB267AA9D600437DED /* DataService.swift in Sources */,
+				AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */,
 				AD1E72CF267AAC2E00437DED /* Listing.swift in Sources */,
 				AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */,
 				AD1E72CA267AABEF00437DED /* Response.swift in Sources */,
