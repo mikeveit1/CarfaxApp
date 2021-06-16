@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7283267A57E500437DED /* AppDelegate.swift */; };
+		AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7285267A57E500437DED /* SceneDelegate.swift */; };
+		AD1E7288267A57E500437DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7287267A57E500437DED /* ViewController.swift */; };
+		AD1E728B267A57E500437DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E7289267A57E500437DED /* Main.storyboard */; };
+		AD1E728D267A57E800437DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1E728C267A57E800437DED /* Assets.xcassets */; };
+		AD1E7290267A57E800437DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E728E267A57E800437DED /* LaunchScreen.storyboard */; };
+		AD1E729B267A57E900437DED /* CarfaxTechAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E729A267A57E900437DED /* CarfaxTechAssignmentTests.swift */; };
+		AD1E72A6267A57E900437DED /* CarfaxTechAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E72A5267A57E900437DED /* CarfaxTechAssignmentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD1E7297267A57E900437DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1E7278267A57E500437DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1E727F267A57E500437DED;
+			remoteInfo = CarfaxTechAssignment;
+		};
+		AD1E72A2267A57E900437DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1E7278267A57E500437DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1E727F267A57E500437DED;
+			remoteInfo = CarfaxTechAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD1E7280267A57E500437DED /* CarfaxTechAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarfaxTechAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1E7283267A57E500437DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD1E7285267A57E500437DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD1E7287267A57E500437DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD1E728A267A57E500437DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD1E728C267A57E800437DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD1E728F267A57E800437DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD1E7291267A57E800437DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1E7296267A57E900437DED /* CarfaxTechAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxTechAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1E729A267A57E900437DED /* CarfaxTechAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxTechAssignmentTests.swift; sourceTree = "<group>"; };
+		AD1E729C267A57E900437DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1E72A1267A57E900437DED /* CarfaxTechAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxTechAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1E72A5267A57E900437DED /* CarfaxTechAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxTechAssignmentUITests.swift; sourceTree = "<group>"; };
+		AD1E72A7267A57E900437DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD1E727D267A57E500437DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E7293267A57E900437DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E729E267A57E900437DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD1E7277267A57E500437DED = {
+			isa = PBXGroup;
+			children = (
+				AD1E7282267A57E500437DED /* CarfaxTechAssignment */,
+				AD1E7299267A57E900437DED /* CarfaxTechAssignmentTests */,
+				AD1E72A4267A57E900437DED /* CarfaxTechAssignmentUITests */,
+				AD1E7281267A57E500437DED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD1E7281267A57E500437DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E7280267A57E500437DED /* CarfaxTechAssignment.app */,
+				AD1E7296267A57E900437DED /* CarfaxTechAssignmentTests.xctest */,
+				AD1E72A1267A57E900437DED /* CarfaxTechAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD1E7282267A57E500437DED /* CarfaxTechAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E7283267A57E500437DED /* AppDelegate.swift */,
+				AD1E7285267A57E500437DED /* SceneDelegate.swift */,
+				AD1E7287267A57E500437DED /* ViewController.swift */,
+				AD1E7289267A57E500437DED /* Main.storyboard */,
+				AD1E728C267A57E800437DED /* Assets.xcassets */,
+				AD1E728E267A57E800437DED /* LaunchScreen.storyboard */,
+				AD1E7291267A57E800437DED /* Info.plist */,
+			);
+			path = CarfaxTechAssignment;
+			sourceTree = "<group>";
+		};
+		AD1E7299267A57E900437DED /* CarfaxTechAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E729A267A57E900437DED /* CarfaxTechAssignmentTests.swift */,
+				AD1E729C267A57E900437DED /* Info.plist */,
+			);
+			path = CarfaxTechAssignmentTests;
+			sourceTree = "<group>";
+		};
+		AD1E72A4267A57E900437DED /* CarfaxTechAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E72A5267A57E900437DED /* CarfaxTechAssignmentUITests.swift */,
+				AD1E72A7267A57E900437DED /* Info.plist */,
+			);
+			path = CarfaxTechAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD1E727F267A57E500437DED /* CarfaxTechAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1E72AA267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignment" */;
+			buildPhases = (
+				AD1E727C267A57E500437DED /* Sources */,
+				AD1E727D267A57E500437DED /* Frameworks */,
+				AD1E727E267A57E500437DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarfaxTechAssignment;
+			productName = CarfaxTechAssignment;
+			productReference = AD1E7280267A57E500437DED /* CarfaxTechAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD1E7295267A57E900437DED /* CarfaxTechAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1E72AD267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignmentTests" */;
+			buildPhases = (
+				AD1E7292267A57E900437DED /* Sources */,
+				AD1E7293267A57E900437DED /* Frameworks */,
+				AD1E7294267A57E900437DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1E7298267A57E900437DED /* PBXTargetDependency */,
+			);
+			name = CarfaxTechAssignmentTests;
+			productName = CarfaxTechAssignmentTests;
+			productReference = AD1E7296267A57E900437DED /* CarfaxTechAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD1E72A0267A57E900437DED /* CarfaxTechAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1E72B0267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignmentUITests" */;
+			buildPhases = (
+				AD1E729D267A57E900437DED /* Sources */,
+				AD1E729E267A57E900437DED /* Frameworks */,
+				AD1E729F267A57E900437DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1E72A3267A57E900437DED /* PBXTargetDependency */,
+			);
+			name = CarfaxTechAssignmentUITests;
+			productName = CarfaxTechAssignmentUITests;
+			productReference = AD1E72A1267A57E900437DED /* CarfaxTechAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD1E7278267A57E500437DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AD1E727F267A57E500437DED = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AD1E7295267A57E900437DED = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AD1E727F267A57E500437DED;
+					};
+					AD1E72A0267A57E900437DED = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AD1E727F267A57E500437DED;
+					};
+				};
+			};
+			buildConfigurationList = AD1E727B267A57E500437DED /* Build configuration list for PBXProject "CarfaxTechAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD1E7277267A57E500437DED;
+			productRefGroup = AD1E7281267A57E500437DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD1E727F267A57E500437DED /* CarfaxTechAssignment */,
+				AD1E7295267A57E900437DED /* CarfaxTechAssignmentTests */,
+				AD1E72A0267A57E900437DED /* CarfaxTechAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD1E727E267A57E500437DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1E7290267A57E800437DED /* LaunchScreen.storyboard in Resources */,
+				AD1E728D267A57E800437DED /* Assets.xcassets in Resources */,
+				AD1E728B267A57E500437DED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E7294267A57E900437DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E729F267A57E900437DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD1E727C267A57E500437DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1E7288267A57E500437DED /* ViewController.swift in Sources */,
+				AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */,
+				AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E7292267A57E900437DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1E729B267A57E900437DED /* CarfaxTechAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1E729D267A57E900437DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1E72A6267A57E900437DED /* CarfaxTechAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD1E7298267A57E900437DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1E727F267A57E500437DED /* CarfaxTechAssignment */;
+			targetProxy = AD1E7297267A57E900437DED /* PBXContainerItemProxy */;
+		};
+		AD1E72A3267A57E900437DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1E727F267A57E500437DED /* CarfaxTechAssignment */;
+			targetProxy = AD1E72A2267A57E900437DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD1E7289267A57E500437DED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1E728A267A57E500437DED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD1E728E267A57E800437DED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1E728F267A57E800437DED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD1E72A8267A57E900437DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD1E72A9267A57E900437DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD1E72AB267A57E900437DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD1E72AC267A57E900437DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD1E72AE267A57E900437DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarfaxTechAssignment.app/CarfaxTechAssignment";
+			};
+			name = Debug;
+		};
+		AD1E72AF267A57E900437DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarfaxTechAssignment.app/CarfaxTechAssignment";
+			};
+			name = Release;
+		};
+		AD1E72B1267A57E900437DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarfaxTechAssignment;
+			};
+			name = Debug;
+		};
+		AD1E72B2267A57E900437DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3NV8759Z7;
+				INFOPLIST_FILE = CarfaxTechAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mikeveit.com.CarfaxTechAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarfaxTechAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD1E727B267A57E500437DED /* Build configuration list for PBXProject "CarfaxTechAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1E72A8267A57E900437DED /* Debug */,
+				AD1E72A9267A57E900437DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1E72AA267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1E72AB267A57E900437DED /* Debug */,
+				AD1E72AC267A57E900437DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1E72AD267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1E72AE267A57E900437DED /* Debug */,
+				AD1E72AF267A57E900437DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1E72B0267A57E900437DED /* Build configuration list for PBXNativeTarget "CarfaxTechAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1E72B1267A57E900437DED /* Debug */,
+				AD1E72B2267A57E900437DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD1E7278267A57E500437DED /* Project object */;
+}
