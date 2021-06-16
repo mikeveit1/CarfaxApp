@@ -18,6 +18,9 @@
 		AD1E72BB267AA9D600437DED /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E72BA267AA9D600437DED /* DataService.swift */; };
 		AD1E72CA267AABEF00437DED /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E72C9267AABEF00437DED /* Response.swift */; };
 		AD1E72CF267AAC2E00437DED /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E72CE267AAC2E00437DED /* Listing.swift */; };
+		AD1E734C267AB39E00437DED /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E734B267AB39E00437DED /* Images.swift */; };
+		AD1E7351267AB45700437DED /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7350267AB45700437DED /* Dealer.swift */; };
+		AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7355267AB75500437DED /* FirstPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		AD1E72BA267AA9D600437DED /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		AD1E72C9267AABEF00437DED /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		AD1E72CE267AAC2E00437DED /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		AD1E734B267AB39E00437DED /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		AD1E7350267AB45700437DED /* Dealer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
+		AD1E7355267AB75500437DED /* FirstPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 			children = (
 				AD1E72C9267AABEF00437DED /* Response.swift */,
 				AD1E72CE267AAC2E00437DED /* Listing.swift */,
+				AD1E734B267AB39E00437DED /* Images.swift */,
+				AD1E7355267AB75500437DED /* FirstPhoto.swift */,
+				AD1E7350267AB45700437DED /* Dealer.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -307,11 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1E734C267AB39E00437DED /* Images.swift in Sources */,
 				AD1E7288267A57E500437DED /* ViewController.swift in Sources */,
 				AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */,
 				AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */,
+				AD1E7351267AB45700437DED /* Dealer.swift in Sources */,
 				AD1E72BB267AA9D600437DED /* DataService.swift in Sources */,
 				AD1E72CF267AAC2E00437DED /* Listing.swift in Sources */,
+				AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */,
 				AD1E72CA267AABEF00437DED /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
