@@ -8,9 +8,13 @@
 import Foundation
 
 struct FirstPhoto: Codable {
+    var large: String
     var medium: String
+    var small: String
     
-    init(medium: String) {
+    init(large: String, medium: String, small: String) {
+        self.large = large
         self.medium = medium
+        self.small = small
     }
 }
