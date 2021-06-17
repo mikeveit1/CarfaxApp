@@ -18,9 +18,9 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var dealerPhoneButton: UIButton!
     private var dealerPhoneNumber: String = ""
-    private var titleFontSize: CGFloat = 19.0
+    private var titleFontSize: CGFloat = 18.0
     private var infoFontSize: CGFloat = 17.0
-    private var phoneFontSize: CGFloat = 15.0
+    private var phoneFontSize: CGFloat = 16.0
     
     
     func setData(listingData: Listing) {

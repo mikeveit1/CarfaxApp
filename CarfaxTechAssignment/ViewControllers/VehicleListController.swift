@@ -13,7 +13,7 @@ class VehicleListController: UIViewController {
     @IBOutlet weak var vehicleTable: UITableView!
     private var listings: [Listing] = []
     private var totalListingCount: Int = 0
-    private var navBarFontSize: CGFloat = 19.0
+    private var navBarFontSize: CGFloat = 18.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
