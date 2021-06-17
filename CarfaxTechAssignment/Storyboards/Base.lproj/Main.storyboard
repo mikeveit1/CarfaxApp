@@ -31,43 +31,44 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="imt-s2-tor">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="292"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="308"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFt-hn-IvX">
-                                                            <rect key="frame" x="186.5" y="302" width="41.5" height="24"/>
+                                                            <rect key="frame" x="186.5" y="318" width="41.5" height="18.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ShP-qF-zdv">
-                                                            <rect key="frame" x="145" y="336" width="124.5" height="24.5"/>
+                                                            <rect key="frame" x="145" y="346.5" width="124.5" height="18.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-TM-wM7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="24.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="41.5" height="18.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOf-t9-SmV">
-                                                                    <rect key="frame" x="41.5" y="0.0" width="41.5" height="24.5"/>
+                                                                    <rect key="frame" x="41.5" y="0.0" width="41.5" height="18.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuq-gj-pRk">
-                                                                    <rect key="frame" x="83" y="0.0" width="41.5" height="24.5"/>
+                                                                    <rect key="frame" x="83" y="0.0" width="41.5" height="18.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ9-3n-hOq">
-                                                            <rect key="frame" x="186.5" y="370.5" width="41.5" height="29.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-hM-BBh">
+                                                            <rect key="frame" x="184" y="375" width="46" height="25"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="dealerPhoneButtonPressed:" destination="qAj-hR-O4e" eventType="touchUpInside" id="fRN-UI-QEv"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -79,7 +80,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dealerPhone" destination="rQ9-3n-hOq" id="mxF-O0-RLq"/>
+                                            <outlet property="dealerPhone" destination="dEe-hM-BBh" id="mnh-uA-qvS"/>
                                             <outlet property="listingStackView" destination="7GI-wv-qfB" id="mvp-hS-GmG"/>
                                             <outlet property="location" destination="kuq-gj-pRk" id="Yh3-vB-g0q"/>
                                             <outlet property="mileage" destination="HOf-t9-SmV" id="iuM-xi-fZv"/>
