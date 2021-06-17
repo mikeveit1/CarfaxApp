@@ -8,7 +8,6 @@
 import Foundation
 
 struct Listing: Codable {
-    let id: String
     let images: Images
     let year: Int
     let make: String
@@ -18,8 +17,7 @@ struct Listing: Codable {
     let mileage: Int
     let dealer: Dealer
     
-    init(id: String, images: Images, year: Int, make: String, model: String, trim: String, currentPrice: Int, mileage: Int, dealer: Dealer) {
-        self.id = id
+    init(images: Images, year: Int, make: String, model: String, trim: String, currentPrice: Int, mileage: Int, dealer: Dealer) {
         self.images = images
         self.year = year
         self.make = make
