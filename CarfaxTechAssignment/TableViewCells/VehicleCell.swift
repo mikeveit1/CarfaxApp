@@ -32,7 +32,7 @@ class VehicleCell: UITableViewCell {
         }
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         title.text = vehicleTitle
-        price.text = "$\(listingData.currentPrice) | "
+        price.text = "\(formatPrice(value: listingData.currentPrice)) | "
         mileage.text = "\(listingData.mileage) Mi | "
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
         location.text = vehicleLocation

@@ -49,6 +49,13 @@ public func formatPhoneNumber(phoneNumber: String) -> String? {
     return leadingOne + areaCode + prefix + "-" + suffix
 }
 
+public func formatPrice(value: Int) -> String {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .currency
+    numberFormatter.maximumFractionDigits = 0
+    return numberFormatter.string(from: NSNumber(value: value)) ?? ""
+}
+
 extension String {
     internal func substring(start: Int, offsetBy: Int) -> String? {
         guard let substringStartIndex = self.index(startIndex, offsetBy: start, limitedBy: endIndex) else {
