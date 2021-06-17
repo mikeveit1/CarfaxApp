@@ -18,9 +18,12 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var dealerPhoneButton: UIButton!
     private var dealerPhoneNumber: String = ""
+    private var titleFontSize: CGFloat = 19.0
+    private var infoFontSize: CGFloat = 17.0
+    private var phoneFontSize: CGFloat = 15.0
     
     
-    public func setData(listingData: Listing) {
+    func setData(listingData: Listing) {
         let data = try? Data(contentsOf: URL(string: listingData.images.firstPhoto.medium)!)
         if let imageData = data {
              vehicleImage.image = UIImage(data: imageData)
@@ -37,6 +40,15 @@ class VehicleCell: UITableViewCell {
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
     
+    func setUpViews() {
+        title.font = UIFont.boldSystemFont(ofSize: titleFontSize)
+        price.font = UIFont.systemFont(ofSize: infoFontSize)
+        mileage.font = UIFont.systemFont(ofSize: infoFontSize)
+        location.font = UIFont.systemFont(ofSize: infoFontSize)
+        dealerPhoneButton.titleLabel?.font = UIFont.systemFont(ofSize: phoneFontSize)
+        
+    }
+    
     @IBAction func dealerPhoneButtonPressed(_ sender: Any) {
         if let url = URL(string: "tel://\(dealerPhoneNumber)") {
             UIApplication.shared.open(url)
@@ -46,6 +58,7 @@ class VehicleCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setUpViews()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
