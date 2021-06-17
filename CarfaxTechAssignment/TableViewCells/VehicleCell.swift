@@ -17,6 +17,19 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var mileage: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var dealerPhoneButton: UIButton!
+    @IBOutlet weak var highlightStackView: UIStackView!
+    @IBOutlet weak var accidentStackView: UIStackView!
+    @IBOutlet weak var personalUseStackView: UIStackView!
+    @IBOutlet weak var oneOwnerStackView: UIStackView!
+    @IBOutlet weak var serviceHistoryStackView: UIStackView!
+    @IBOutlet weak var accidentImageView: UIImageView!
+    @IBOutlet weak var accidentLabel: UILabel!
+    @IBOutlet weak var personalImageView: UIImageView!
+    @IBOutlet weak var personalLabel: UILabel!
+    @IBOutlet weak var oneOwnerImageView: UIImageView!
+    @IBOutlet weak var oneOwnerLabel: UILabel!
+    @IBOutlet weak var serviceHistoryImageView: UIImageView!
+    @IBOutlet weak var serviceHistoryLabel: UILabel!
     private var dealerPhoneNumber: String = ""
     private var titleFontSize: CGFloat = 18.0
     private var infoFontSize: CGFloat = 17.0
