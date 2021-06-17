@@ -14,15 +14,11 @@ class VehicleListController: UIViewController {
     private var listings: [Listing] = []
     private var totalListingCount: Int = 0
     
-    override func viewWillAppear(_ animated: Bool) {
-        super .viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         getData()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setUpViews()
-    }
     
     func setUpViews() {
         configureTableView()
@@ -32,8 +28,7 @@ class VehicleListController: UIViewController {
     func configureTableView() {
         vehicleTable.delegate = self
         vehicleTable.dataSource = self
-        vehicleTable.separatorColor = .clear
-     //   vehicleTable.reloadData()
+        vehicleTable.reloadData()
     }
     
     func configureNavBar() {
@@ -43,25 +38,18 @@ class VehicleListController: UIViewController {
     }
     
     func getData() {
-            DispatchQueue.global(qos: .background).async {
-                DataService.shared.getData() { (data) in
-                    do {
-                        let decoder = JSONDecoder()
-                        let json = try decoder.decode(Response.self, from: data)
-                        DispatchQueue.main.async {
-                        self.listings.append(contentsOf: json.listings)
-                        print("listings \(self.listings)")
-                            self.vehicleTable.reloadData()
-                        }
-                    } catch {
-                        print( "Can't load data.")
-                    }
-                } errorHandler: {(error: Error) -> () in
-                    DispatchQueue.main.async {
-                        print(error.localizedDescription)
-                    }
-                }
+        DataService.shared.getData() { (data) in
+            do {
+                let decoder = JSONDecoder()
+                let json = try decoder.decode(Response.self, from: data)
+                self.listings.append(contentsOf: json.listings)
+                self.totalListingCount = json.totalListingCount
+                self.setUpViews()
+            } catch {
+                print( "Can't load data.")
             }
+        } errorHandler: {(error: Error) -> () in
+            print(error.localizedDescription)
         }
     }
 }
