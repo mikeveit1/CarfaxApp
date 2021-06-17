@@ -14,12 +14,12 @@ class VehicleListController: UIViewController {
     private var listings: [Listing] = []
     private var totalListingCount: Int = 0
     private var navBarFontSize: CGFloat = 18.0
+    var imagesDict: [String: UIImage] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
     }
-    
     
     func setUpViews() {
         configureTableView()
@@ -47,6 +47,13 @@ class VehicleListController: UIViewController {
                 self.listings.append(contentsOf: json.listings)
                 self.totalListingCount = json.totalListingCount
                 self.setUpViews()
+                for listing in json.listings {
+                    print(listing.accidentHistory)
+                    imagesDict.updateValue(getImageFromData(stringUrl: listing.images.firstPhoto.medium), forKey: listing.images.firstPhoto.medium)
+                    imagesDict.updateValue(getImageFromData(stringUrl: listing.serviceHistory.iconUrl), forKey: listing.serviceHistory.iconUrl)
+                    imagesDict.updateValue(getImageFromData(stringUrl: listing.accidentHistory.iconUrl), forKey: listing.accidentHistory.iconUrl)
+                }
+                self.vehicleTable.reloadData()
             } catch {
                 print( "Can't load data.")
             }
@@ -54,8 +61,18 @@ class VehicleListController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
+    func getImageFromData(stringUrl: String) -> UIImage {
+        var image = UIImage()
+        let data = try? Data(contentsOf: URL(string: stringUrl)!)
+        if let imageData = data {
+            image = ((UIImage(data: imageData) ?? UIImage(named: "noimage"))!)
+        } else {
+            image = (UIImage(named: "noimage")!)
+        }
+        return image
+    }
 }
-
 
 extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     
@@ -66,10 +83,9 @@ extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VehicleCell
         
-        cell.setData(listingData: listings[indexPath.row])
+        cell.setData(listingData: listings[indexPath.row], images: imagesDict)
         
         return cell
     }
-    
     
 }
