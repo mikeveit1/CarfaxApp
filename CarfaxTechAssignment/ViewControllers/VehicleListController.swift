@@ -8,9 +8,11 @@
 import UIKit
 
 class VehicleListController: UIViewController {
-
+    
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var vehicleTable: UITableView!
-    var listings: [Listing] = []
+    private var listings: [Listing] = []
+    private var totalListingCount: Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
         super .viewWillAppear(animated)
@@ -19,10 +21,27 @@ class VehicleListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpViews()
+    }
+    
+    func setUpViews() {
+        configureTableView()
+        configureNavBar()
+    }
+    
+    func configureTableView() {
         vehicleTable.delegate = self
         vehicleTable.dataSource = self
+        vehicleTable.separatorColor = .clear
+     //   vehicleTable.reloadData()
     }
-
+    
+    func configureNavBar() {
+        navBar.topItem?.title = "\(totalListingCount) Listings"
+        navBar.isTranslucent = false
+        navBar.barTintColor = view.backgroundColor
+    }
+    
     func getData() {
             DispatchQueue.global(qos: .background).async {
                 DataService.shared.getData() { (data) in
@@ -45,9 +64,10 @@ class VehicleListController: UIViewController {
             }
         }
     }
+}
 
 
-extension VehicleListController: UITableViewDelegate, UITableViewDataSource {
+extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listings.count

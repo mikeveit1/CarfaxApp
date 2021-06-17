@@ -9,8 +9,10 @@ import Foundation
 
 struct Response: Codable {
     let listings: [Listing]
+    let totalListingCount: Int
     
-    init(listings: [Listing]) {
+    init(listings: [Listing], totalListingCount: Int) {
         self.listings = listings
+        self.totalListingCount = totalListingCount
     }
 }
