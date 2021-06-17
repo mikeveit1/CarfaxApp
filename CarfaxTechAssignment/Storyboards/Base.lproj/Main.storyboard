@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FxW-R8-ixp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="400" id="qAj-hR-O4e" customClass="VehicleCell" customModule="CarfaxTechAssignment" customModuleProvider="target">
@@ -107,13 +107,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ky6-0q-8Jp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jh-vH-0dB"/>
-                            <constraint firstItem="FxW-R8-ixp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="89Q-Qq-OhU"/>
+                            <constraint firstItem="FxW-R8-ixp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="89Q-Qq-OhU"/>
                             <constraint firstItem="FxW-R8-ixp" firstAttribute="top" secondItem="Ky6-0q-8Jp" secondAttribute="bottom" id="Llh-g9-qOj"/>
                             <constraint firstItem="Ky6-0q-8Jp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MOm-VI-wCK"/>
-                            <constraint firstItem="FxW-R8-ixp" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Tpl-Dt-hTD"/>
-                            <constraint firstItem="FxW-R8-ixp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="rWk-QE-PcY"/>
+                            <constraint firstItem="FxW-R8-ixp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tpl-Dt-hTD"/>
                             <constraint firstItem="Ky6-0q-8Jp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xKq-s6-OCx"/>
-                            <constraint firstItem="FxW-R8-ixp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zQ1-HC-pyl"/>
+                            <constraint firstItem="FxW-R8-ixp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zQ1-HC-pyl"/>
                         </constraints>
                     </view>
                     <connections>
