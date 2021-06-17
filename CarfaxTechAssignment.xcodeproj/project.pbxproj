@@ -22,6 +22,7 @@
 		AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7355267AB75500437DED /* FirstPhoto.swift */; };
 		AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E735D267ABBBC00437DED /* VehicleListController.swift */; };
 		AD1E7367267ABC0A00437DED /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7366267ABC0A00437DED /* VehicleCell.swift */; };
+		AD1E7370267B94D100437DED /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E736F267B94D000437DED /* Format.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		AD1E7355267AB75500437DED /* FirstPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPhoto.swift; sourceTree = "<group>"; };
 		AD1E735D267ABBBC00437DED /* VehicleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListController.swift; sourceTree = "<group>"; };
 		AD1E7366267ABC0A00437DED /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		AD1E736F267B94D000437DED /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		AD1E7282267A57E500437DED /* CarfaxTechAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				AD1E736E267B94B200437DED /* CustomFormats */,
 				AD1E7365267ABBF500437DED /* TableViewCells */,
 				AD1E72C5267AAA4900437DED /* ViewControllers */,
 				AD1E72C4267AAA3D00437DED /* SupportingFiles */,
@@ -195,6 +198,14 @@
 				AD1E7366267ABC0A00437DED /* VehicleCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AD1E736E267B94B200437DED /* CustomFormats */ = {
+			isa = PBXGroup;
+			children = (
+				AD1E736F267B94D000437DED /* Format.swift */,
+			);
+			path = CustomFormats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1E7370267B94D100437DED /* Format.swift in Sources */,
 				AD1E7367267ABC0A00437DED /* VehicleCell.swift in Sources */,
 				AD1E734C267AB39E00437DED /* Images.swift in Sources */,
 				AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */,
