@@ -23,7 +23,6 @@
 		AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E735D267ABBBC00437DED /* VehicleListController.swift */; };
 		AD1E7367267ABC0A00437DED /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7366267ABC0A00437DED /* VehicleCell.swift */; };
 		AD1E7370267B94D100437DED /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E736F267B94D000437DED /* Format.swift */; };
-		AD6B1D26267BF9DF0024D390 /* OnePriceArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D25267BF9DF0024D390 /* OnePriceArrow.swift */; };
 		AD6B1D2E267BFC490024D390 /* ServiceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */; };
 		AD6B1D33267C119D0024D390 /* AccidentHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D32267C119D0024D390 /* AccidentHistory.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		AD1E735D267ABBBC00437DED /* VehicleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListController.swift; sourceTree = "<group>"; };
 		AD1E7366267ABC0A00437DED /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		AD1E736F267B94D000437DED /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
-		AD6B1D25267BF9DF0024D390 /* OnePriceArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePriceArrow.swift; sourceTree = "<group>"; };
 		AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHistory.swift; sourceTree = "<group>"; };
 		AD6B1D32267C119D0024D390 /* AccidentHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,7 +164,6 @@
 				AD1E72CE267AAC2E00437DED /* Listing.swift */,
 				AD6B1D32267C119D0024D390 /* AccidentHistory.swift */,
 				AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */,
-				AD6B1D25267BF9DF0024D390 /* OnePriceArrow.swift */,
 				AD1E734B267AB39E00437DED /* Images.swift */,
 				AD1E7355267AB75500437DED /* FirstPhoto.swift */,
 				AD1E7350267AB45700437DED /* Dealer.swift */,
@@ -353,7 +350,6 @@
 				AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */,
 				AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */,
 				AD1E7351267AB45700437DED /* Dealer.swift in Sources */,
-				AD6B1D26267BF9DF0024D390 /* OnePriceArrow.swift in Sources */,
 				AD6B1D33267C119D0024D390 /* AccidentHistory.swift in Sources */,
 				AD1E72BB267AA9D600437DED /* DataService.swift in Sources */,
 				AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */,
