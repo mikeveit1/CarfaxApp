@@ -13,6 +13,7 @@ class VehicleListController: UIViewController {
     @IBOutlet weak var vehicleTable: UITableView!
     private var listings: [Listing] = []
     private var totalListingCount: Int = 0
+    private var navBarFontSize: CGFloat = 19.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class VehicleListController: UIViewController {
     
     func configureNavBar() {
         navBar.topItem?.title = "\(totalListingCount) Listings"
+        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: navBarFontSize)]
         navBar.isTranslucent = false
         navBar.barTintColor = view.backgroundColor
     }
