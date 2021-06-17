@@ -16,7 +16,7 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var mileage: UILabel!
     @IBOutlet weak var location: UILabel!
-    @IBOutlet weak var dealerPhone: UIButton!
+    @IBOutlet weak var dealerPhoneButton: UIButton!
     private var dealerPhoneNumber: String = ""
     
     
@@ -29,12 +29,12 @@ class VehicleCell: UITableViewCell {
         }
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         title.text = vehicleTitle
-        price.text = "$\(listingData.currentPrice)"
-        mileage.text = "\(listingData.mileage) Mi"
+        price.text = "$\(listingData.currentPrice) | "
+        mileage.text = "\(listingData.mileage) Mi | "
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
         location.text = vehicleLocation
         dealerPhoneNumber = listingData.dealer.phone
-        dealerPhone.setTitle(listingData.dealer.phone, for: .normal)
+        dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
     
     @IBAction func dealerPhoneButtonPressed(_ sender: Any) {
