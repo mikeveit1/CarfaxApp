@@ -48,12 +48,7 @@ class VehicleListController: UIViewController {
                 self.listings.append(contentsOf: json.listings)
                 self.totalListingCount = json.totalListingCount
                 self.setUpViews()
-                for listing in json.listings {
-                    imagesDict.updateValue(getImageFromData(stringUrl: listing.images.firstPhoto.medium), forKey: listing.images.firstPhoto.medium)
-                    imagesDict.updateValue(getImageFromData(stringUrl: listing.serviceHistory.iconUrl), forKey: listing.serviceHistory.iconUrl)
-                    imagesDict.updateValue(getImageFromData(stringUrl: listing.accidentHistory.iconUrl), forKey: listing.accidentHistory.iconUrl)
-                    imagesDict.updateValue(getImageFromData(stringUrl: listing.ownerHistory.iconUrl), forKey: listing.ownerHistory.iconUrl)
-                }
+                self.updateListingImages(listings: json.listings)
                 self.vehicleTable.reloadData()
             } catch {
                 DispatchQueue.main.async {
@@ -64,6 +59,19 @@ class VehicleListController: UIViewController {
             print(error.localizedDescription)
             showErrorAlert(title: "Error", message: error.localizedDescription)
         }
+    }
+    
+    private func updateListingImages(listings: [Listing]) {
+        for listing in listings {
+            updateImageValue(url: listing.images.firstPhoto.medium)
+            updateImageValue(url: listing.serviceHistory.iconUrl)
+            updateImageValue(url: listing.accidentHistory.iconUrl)
+            updateImageValue(url: listing.ownerHistory.iconUrl)
+        }
+    }
+    
+    private func updateImageValue(url: String) {
+        imagesDict.updateValue(getImageFromData(stringUrl: url), forKey: url)
     }
     
     private func getImageFromData(stringUrl: String) -> UIImage {
