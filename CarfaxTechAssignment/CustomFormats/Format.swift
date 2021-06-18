@@ -56,6 +56,13 @@ public func formatPrice(value: Int) -> String {
     return numberFormatter.string(from: NSNumber(value: value)) ?? ""
 }
 
+public func formatMileage(value: Double) -> String {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .decimal
+    numberFormatter.maximumFractionDigits = 0
+    return numberFormatter.string(from: NSNumber(value: value)) ?? ""
+}
+
 extension String {
     internal func substring(start: Int, offsetBy: Int) -> String? {
         guard let substringStartIndex = self.index(startIndex, offsetBy: start, limitedBy: endIndex) else {
@@ -68,11 +75,4 @@ extension String {
         
         return String(self[substringStartIndex ..< substringEndIndex])
     }
-}
-
-public func formatMileage(value: Double) -> String {
-    let numberFormatter = NumberFormatter()
-    numberFormatter.numberStyle = .decimal
-    numberFormatter.maximumFractionDigits = 0
-    return numberFormatter.string(from: NSNumber(value: value)) ?? ""
 }
