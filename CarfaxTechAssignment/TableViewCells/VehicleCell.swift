@@ -34,21 +34,36 @@ class VehicleCell: UITableViewCell {
     private var titleFontSize: CGFloat = 18.0
     private var infoFontSize: CGFloat = 17.0
     private var phoneFontSize: CGFloat = 16.0
+    private var highlightSize: CGFloat = 15.0
     
     
-    func setData(listingData: Listing) {
-        let data = try? Data(contentsOf: URL(string: listingData.images.firstPhoto.medium)!)
-        if let imageData = data {
-             vehicleImage.image = UIImage(data: imageData)
-        } else {
-            vehicleImage.image = UIImage(named: "noimage")
-        }
+    
+    func setData(listingData: Listing, images: [String: UIImage]) {
+        vehicleImage.image = images[listingData.images.firstPhoto.medium]
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
+        
         title.text = vehicleTitle
-        price.text = "\(formatPrice(value: listingData.currentPrice)) | "
-        mileage.text = "\(listingData.mileage) Mi | "
+        
+        price.text = "\(formatPrice(value: listingData.currentPrice))"
+        
+        let vehicleMileage = Double(listingData.mileage / 1000).rounded()
+        mileage.text = "| \(formatMileage(value: vehicleMileage))k Mi |"
+        
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
         location.text = vehicleLocation
+        
+        accidentLabel.text = listingData.accidentHistory.text
+        accidentImageView.image = images[listingData.accidentHistory.iconUrl]
+        
+        var serviceRecordSuffix = String()
+        if listingData.serviceHistory.number == 1 {
+            serviceRecordSuffix = "Record"
+        } else {
+            serviceRecordSuffix = "Records"
+        }
+        serviceHistoryLabel.text = "\(listingData.serviceHistory.number) \(listingData.serviceHistory.text) \(serviceRecordSuffix)"
+        serviceHistoryImageView.image = images[listingData.serviceHistory.iconUrl]
+        
         dealerPhoneNumber = listingData.dealer.phone
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
