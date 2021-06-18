@@ -86,10 +86,7 @@ extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VehicleCell
-        
         cell.setData(listingData: listings[indexPath.row], images: imagesDict)
-        
         return cell
     }
-    
 }
