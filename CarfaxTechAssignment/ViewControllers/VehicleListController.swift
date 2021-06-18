@@ -48,10 +48,10 @@ class VehicleListController: UIViewController {
                 self.totalListingCount = json.totalListingCount
                 self.setUpViews()
                 for listing in json.listings {
-                    print(listing.accidentHistory)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.images.firstPhoto.medium), forKey: listing.images.firstPhoto.medium)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.serviceHistory.iconUrl), forKey: listing.serviceHistory.iconUrl)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.accidentHistory.iconUrl), forKey: listing.accidentHistory.iconUrl)
+                    imagesDict.updateValue(getImageFromData(stringUrl: listing.ownerHistory.iconUrl), forKey: listing.ownerHistory.iconUrl)
                 }
                 self.vehicleTable.reloadData()
             } catch {

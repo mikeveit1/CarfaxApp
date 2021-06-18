@@ -64,6 +64,9 @@ class VehicleCell: UITableViewCell {
         serviceHistoryLabel.text = "\(listingData.serviceHistory.number) \(listingData.serviceHistory.text) \(serviceRecordSuffix)"
         serviceHistoryImageView.image = images[listingData.serviceHistory.iconUrl]
         
+        oneOwnerLabel.text = "\(listingData.ownerHistory.text)"
+        oneOwnerImageView.image = images[listingData.ownerHistory.iconUrl]
+        
         dealerPhoneNumber = listingData.dealer.phone
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
