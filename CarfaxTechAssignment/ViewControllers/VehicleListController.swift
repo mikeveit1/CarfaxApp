@@ -29,6 +29,7 @@ class VehicleListController: UIViewController {
     private func configureTableView() {
         vehicleTable.delegate = self
         vehicleTable.dataSource = self
+        vehicleTable.backgroundColor = view.backgroundColor
         vehicleTable.reloadData()
     }
     
