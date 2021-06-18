@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct VehicleHistory: Codable {
+struct VehicleUseHistory: Codable {
     var iconUrl: String
     var text: String
     
     init(iconUrl: String, text: String) {
-        self.iconUrl = iconUrl
-        self.text = text
+       self.iconUrl = iconUrl
+       self.text = text
     }
 }
