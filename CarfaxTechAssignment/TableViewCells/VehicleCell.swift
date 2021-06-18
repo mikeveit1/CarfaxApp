@@ -68,11 +68,30 @@ class VehicleCell: UITableViewCell {
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
     
+    override func prepareForReuse() {
+           super.prepareForReuse()
+          vehicleImage.image = nil
+       }
+    
     func setUpViews() {
+        vehicleImage.layer.masksToBounds = true
+        vehicleImage.layer.cornerRadius = 20
+        
         title.font = UIFont.boldSystemFont(ofSize: titleFontSize)
-        price.font = UIFont.systemFont(ofSize: infoFontSize)
+        
+        price.font = UIFont.boldSystemFont(ofSize: infoFontSize)
+        
         mileage.font = UIFont.systemFont(ofSize: infoFontSize)
+        
         location.font = UIFont.systemFont(ofSize: infoFontSize)
+        
+        accidentLabel.font = UIFont.systemFont(ofSize: highlightSize)
+        personalLabel.font = UIFont.systemFont(ofSize: highlightSize)
+        
+        oneOwnerLabel.font = UIFont.systemFont(ofSize: highlightSize)
+        
+        serviceHistoryLabel.font = UIFont.systemFont(ofSize: highlightSize)
+        
         dealerPhoneButton.titleLabel?.font = UIFont.systemFont(ofSize: phoneFontSize)
         
     }
@@ -85,14 +104,6 @@ class VehicleCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setUpViews()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
