@@ -56,13 +56,13 @@ class VehicleListController: UIViewController {
                 }
                 self.vehicleTable.reloadData()
             } catch {
-               DispatchQueue.main.async {
+                DispatchQueue.main.async {
                     self.showErrorAlert(title: "Error", message: error.localizedDescription)
                 }
             }
         } errorHandler: {(error: Error) -> () in
-                print(error.localizedDescription)
-                showErrorAlert(title: "Error", message: error.localizedDescription)
+            print(error.localizedDescription)
+            showErrorAlert(title: "Error", message: error.localizedDescription)
         }
     }
     
