@@ -19,13 +19,10 @@ class VehicleCell: UITableViewCell {
     @IBOutlet weak var dealerPhoneButton: UIButton!
     @IBOutlet weak var highlightStackView: UIStackView!
     @IBOutlet weak var accidentStackView: UIStackView!
-    @IBOutlet weak var personalUseStackView: UIStackView!
     @IBOutlet weak var ownerHistoryStackView: UIStackView!
     @IBOutlet weak var serviceHistoryStackView: UIStackView!
     @IBOutlet weak var accidentImageView: UIImageView!
     @IBOutlet weak var accidentLabel: UILabel!
-    @IBOutlet weak var personalImageView: UIImageView!
-    @IBOutlet weak var personalLabel: UILabel!
     @IBOutlet weak var ownerHistoryImageView: UIImageView!
     @IBOutlet weak var ownerHistoryLabel: UILabel!
     @IBOutlet weak var serviceHistoryImageView: UIImageView!
@@ -73,10 +70,6 @@ class VehicleCell: UITableViewCell {
         ownerHistoryLabel.textColor = labelColor
         ownerHistoryImageView.image = images[listingData.ownerHistory.iconUrl]
         
-        personalLabel.text = "\(listingData.vehicleUseHistory.text)"
-        personalLabel.textColor = labelColor
-        //personalImageView.image = images[listingData.vehicleUseHistory.iconUrl]
-        
         dealerPhoneNumber = listingData.dealer.phone
         dealerPhoneButton.tintColor = .systemBlue
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
@@ -98,7 +91,6 @@ class VehicleCell: UITableViewCell {
         configureFont(label: mileageLabel, bold: false, size: infoFontSize)
         configureFont(label: locationLabel, bold: false, size: infoFontSize)
         configureFont(label: accidentLabel, bold: false, size: highlightSize)
-        configureFont(label: personalLabel, bold: false, size: highlightSize)
         configureFont(label: ownerHistoryLabel, bold: false, size: highlightSize)
         configureFont(label: serviceHistoryLabel, bold: false, size: highlightSize)
         configureFont(label: dealerPhoneButton.titleLabel!, bold: true, size: phoneFontSize)

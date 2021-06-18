@@ -52,7 +52,6 @@ class VehicleListController: UIViewController {
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.serviceHistory.iconUrl), forKey: listing.serviceHistory.iconUrl)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.accidentHistory.iconUrl), forKey: listing.accidentHistory.iconUrl)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.ownerHistory.iconUrl), forKey: listing.ownerHistory.iconUrl)
-                    //imagesDict.updateValue(getImageFromData(stringUrl: listing.vehicleUseHistory.iconUrl), forKey: listing.vehicleUseHistory.iconUrl)
                 }
                 self.vehicleTable.reloadData()
             } catch {
