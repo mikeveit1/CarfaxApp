@@ -56,11 +56,13 @@ class VehicleListController: UIViewController {
                 }
                 self.vehicleTable.reloadData()
             } catch {
-                print( "Can't load data.")
-                print(error.localizedDescription)
+               DispatchQueue.main.async {
+                    self.showErrorAlert(title: "Error", message: error.localizedDescription)
+                }
             }
         } errorHandler: {(error: Error) -> () in
-            print(error.localizedDescription)
+                print(error.localizedDescription)
+                showErrorAlert(title: "Error", message: error.localizedDescription)
         }
     }
     
@@ -84,7 +86,7 @@ extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VehicleCell
-
+        
         cell.setData(listingData: listings[indexPath.row], images: imagesDict)
         
         return cell

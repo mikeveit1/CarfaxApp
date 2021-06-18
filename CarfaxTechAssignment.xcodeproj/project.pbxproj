@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0B5552267C2C4D006C2F6F /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B5551267C2C4D006C2F6F /* ErrorAlert.swift */; };
 		AD1E7284267A57E500437DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7283267A57E500437DED /* AppDelegate.swift */; };
 		AD1E7286267A57E500437DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E7285267A57E500437DED /* SceneDelegate.swift */; };
 		AD1E728B267A57E500437DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E7289267A57E500437DED /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0B5551267C2C4D006C2F6F /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
 		AD1E7280267A57E500437DED /* CarfaxTechAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarfaxTechAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1E7283267A57E500437DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1E7285267A57E500437DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0B5550267C2C3E006C2F6F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				AD0B5551267C2C4D006C2F6F /* ErrorAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
 		AD1E7277267A57E500437DED = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 		AD1E7282267A57E500437DED /* CarfaxTechAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				AD0B5550267C2C3E006C2F6F /* Alerts */,
 				AD1E736E267B94B200437DED /* CustomFormats */,
 				AD1E7365267ABBF500437DED /* TableViewCells */,
 				AD1E72C5267AAA4900437DED /* ViewControllers */,
@@ -363,6 +374,7 @@
 				AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */,
 				AD6B1D2E267BFC490024D390 /* ServiceHistory.swift in Sources */,
 				AD1E72CF267AAC2E00437DED /* Listing.swift in Sources */,
+				AD0B5552267C2C4D006C2F6F /* ErrorAlert.swift in Sources */,
 				AD1E7356267AB75500437DED /* FirstPhoto.swift in Sources */,
 				AD1E72CA267AABEF00437DED /* Response.swift in Sources */,
 			);
