@@ -21,6 +21,7 @@ class VehicleListController: UIViewController {
     }
     
     private func setUpViews() {
+        view.backgroundColor = .black
         configureTableView()
         configureNavBar()
     }

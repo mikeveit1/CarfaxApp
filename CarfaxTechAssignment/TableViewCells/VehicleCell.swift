@@ -80,6 +80,8 @@ class VehicleCell: UITableViewCell {
        }
     
     private func setUpViews() {
+        self.backgroundColor = .black
+        
         vehicleImage.layer.masksToBounds = true
         vehicleImage.layer.cornerRadius = 20
         
