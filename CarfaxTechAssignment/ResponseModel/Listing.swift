@@ -19,9 +19,8 @@ struct Listing: Codable {
     let serviceHistory: ServiceHistory
     let accidentHistory: AccidentHistory
     let ownerHistory: OwnerHistory
-    let vehicleUseHistory: VehicleUseHistory
     
-    init(images: Images, year: Int, make: String, model: String, trim: String, currentPrice: Int, mileage: Int, dealer: Dealer, serviceHistory: ServiceHistory, accidentHistory: AccidentHistory, ownerHistory: OwnerHistory, vehicleUseHistory: VehicleUseHistory) {
+    init(images: Images, year: Int, make: String, model: String, trim: String, currentPrice: Int, mileage: Int, dealer: Dealer, serviceHistory: ServiceHistory, accidentHistory: AccidentHistory, ownerHistory: OwnerHistory) {
         self.images = images
         self.year = year
         self.make = make
@@ -33,6 +32,5 @@ struct Listing: Codable {
         self.serviceHistory = serviceHistory
         self.accidentHistory = accidentHistory
         self.ownerHistory = ownerHistory
-        self.vehicleUseHistory = vehicleUseHistory
     }
 }
