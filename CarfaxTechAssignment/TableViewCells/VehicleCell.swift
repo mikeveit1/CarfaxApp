@@ -35,6 +35,7 @@ class VehicleCell: UITableViewCell {
     private var infoFontSize: CGFloat = 17.0
     private var phoneFontSize: CGFloat = 16.0
     private var highlightSize: CGFloat = 15.0
+    private var labelColor: UIColor = .white
     
     
     
@@ -43,16 +44,21 @@ class VehicleCell: UITableViewCell {
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         
         titleLabel.text = vehicleTitle
+        titleLabel.textColor = labelColor
         
         priceLabel.text = "\(formatPrice(value: listingData.currentPrice))"
+        priceLabel.textColor = labelColor
         
         let vehicleMileage = Double(listingData.mileage / 1000).rounded()
         mileageLabel.text = "| \(formatMileage(value: vehicleMileage))k Mi |"
+        mileageLabel.textColor = labelColor
         
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
         locationLabel.text = vehicleLocation
+        locationLabel.textColor = labelColor
         
         accidentLabel.text = listingData.accidentHistory.text
+        accidentLabel.textColor = labelColor
         accidentImageView.image = images[listingData.accidentHistory.iconUrl]
         
         var serviceRecordSuffix = String()
@@ -62,15 +68,19 @@ class VehicleCell: UITableViewCell {
             serviceRecordSuffix = "Records"
         }
         serviceHistoryLabel.text = "\(listingData.serviceHistory.number) \(listingData.serviceHistory.text) \(serviceRecordSuffix)"
+        serviceHistoryLabel.textColor = labelColor
         serviceHistoryImageView.image = images[listingData.serviceHistory.iconUrl]
         
         oneOwnerLabel.text = "\(listingData.ownerHistory.text)"
+        oneOwnerLabel.textColor = labelColor
         oneOwnerImageView.image = images[listingData.ownerHistory.iconUrl]
         
         personalLabel.text = "\(listingData.vehicleUseHistory.text)"
+        personalLabel.textColor = labelColor
         //personalImageView.image = images[listingData.vehicleUseHistory.iconUrl]
         
         dealerPhoneNumber = listingData.dealer.phone
+        dealerPhoneButton.tintColor = .systemBlue
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
     

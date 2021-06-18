@@ -34,7 +34,7 @@ class VehicleListController: UIViewController {
     
     private func configureNavBar() {
         navBar.topItem?.title = "\(totalListingCount) Listings"
-        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18.0)]
+        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18.0), NSAttributedString.Key.foregroundColor: UIColor.white]
         navBar.isTranslucent = false
         navBar.barTintColor = view.backgroundColor
     }
