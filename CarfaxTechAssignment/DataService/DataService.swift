@@ -9,7 +9,7 @@ import Foundation
 class DataService {
     static let shared = DataService()
     
-    func getData(completion: (Data) -> Void, errorHandler: (Error) -> Void) {
+    public func getData(completion: (Data) -> Void, errorHandler: (Error) -> Void) {
         guard let path =  URL(string: "https://carfax-for-consumers.firebaseio.com/assignment.json") else { return }
         
         let url = path

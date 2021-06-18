@@ -13,33 +13,32 @@ class VehicleListController: UIViewController {
     @IBOutlet weak var vehicleTable: UITableView!
     private var listings: [Listing] = []
     private var totalListingCount: Int = 0
-    private var navBarFontSize: CGFloat = 18.0
-    var imagesDict: [String: UIImage] = [:]
+    private var imagesDict: [String: UIImage] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
     }
     
-    func setUpViews() {
+    private func setUpViews() {
         configureTableView()
         configureNavBar()
     }
     
-    func configureTableView() {
+    private func configureTableView() {
         vehicleTable.delegate = self
         vehicleTable.dataSource = self
         vehicleTable.reloadData()
     }
     
-    func configureNavBar() {
+    private func configureNavBar() {
         navBar.topItem?.title = "\(totalListingCount) Listings"
-        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: navBarFontSize)]
+        navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 18.0)]
         navBar.isTranslucent = false
         navBar.barTintColor = view.backgroundColor
     }
     
-    func getData() {
+    private func getData() {
         DataService.shared.getData() { (data) in
             do {
                 let decoder = JSONDecoder()
@@ -52,17 +51,19 @@ class VehicleListController: UIViewController {
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.serviceHistory.iconUrl), forKey: listing.serviceHistory.iconUrl)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.accidentHistory.iconUrl), forKey: listing.accidentHistory.iconUrl)
                     imagesDict.updateValue(getImageFromData(stringUrl: listing.ownerHistory.iconUrl), forKey: listing.ownerHistory.iconUrl)
+                    //imagesDict.updateValue(getImageFromData(stringUrl: listing.vehicleUseHistory.iconUrl), forKey: listing.vehicleUseHistory.iconUrl)
                 }
                 self.vehicleTable.reloadData()
             } catch {
                 print( "Can't load data.")
+                print(error.localizedDescription)
             }
         } errorHandler: {(error: Error) -> () in
             print(error.localizedDescription)
         }
     }
     
-    func getImageFromData(stringUrl: String) -> UIImage {
+    private func getImageFromData(stringUrl: String) -> UIImage {
         var image = UIImage()
         let data = try? Data(contentsOf: URL(string: stringUrl)!)
         if let imageData = data {
@@ -82,7 +83,7 @@ extension VehicleListController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! VehicleCell
-        
+
         cell.setData(listingData: listings[indexPath.row], images: imagesDict)
         
         return cell

@@ -11,11 +11,11 @@ class VehicleCell: UITableViewCell {
 
     @IBOutlet weak var listingStackView: UIStackView!
     @IBOutlet weak var vehicleImage: UIImageView!
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var vehicleInfoStackView: UIStackView!
-    @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var mileage: UILabel!
-    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var mileageLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dealerPhoneButton: UIButton!
     @IBOutlet weak var highlightStackView: UIStackView!
     @IBOutlet weak var accidentStackView: UIStackView!
@@ -38,19 +38,19 @@ class VehicleCell: UITableViewCell {
     
     
     
-    func setData(listingData: Listing, images: [String: UIImage]) {
+   public func setData(listingData: Listing, images: [String: UIImage]) {
         vehicleImage.image = images[listingData.images.firstPhoto.medium]
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         
-        title.text = vehicleTitle
+        titleLabel.text = vehicleTitle
         
-        price.text = "\(formatPrice(value: listingData.currentPrice))"
+        priceLabel.text = "\(formatPrice(value: listingData.currentPrice))"
         
         let vehicleMileage = Double(listingData.mileage / 1000).rounded()
-        mileage.text = "| \(formatMileage(value: vehicleMileage))k Mi |"
+        mileageLabel.text = "| \(formatMileage(value: vehicleMileage))k Mi |"
         
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
-        location.text = vehicleLocation
+        locationLabel.text = vehicleLocation
         
         accidentLabel.text = listingData.accidentHistory.text
         accidentImageView.image = images[listingData.accidentHistory.iconUrl]
@@ -67,6 +67,9 @@ class VehicleCell: UITableViewCell {
         oneOwnerLabel.text = "\(listingData.ownerHistory.text)"
         oneOwnerImageView.image = images[listingData.ownerHistory.iconUrl]
         
+        personalLabel.text = "\(listingData.vehicleUseHistory.text)"
+        //personalImageView.image = images[listingData.vehicleUseHistory.iconUrl]
+        
         dealerPhoneNumber = listingData.dealer.phone
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
@@ -76,17 +79,17 @@ class VehicleCell: UITableViewCell {
           vehicleImage.image = nil
        }
     
-    func setUpViews() {
+    private func setUpViews() {
         vehicleImage.layer.masksToBounds = true
         vehicleImage.layer.cornerRadius = 20
         
-        title.font = UIFont.boldSystemFont(ofSize: titleFontSize)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: titleFontSize)
         
-        price.font = UIFont.boldSystemFont(ofSize: infoFontSize)
+        priceLabel.font = UIFont.boldSystemFont(ofSize: infoFontSize)
         
-        mileage.font = UIFont.systemFont(ofSize: infoFontSize)
+        mileageLabel.font = UIFont.systemFont(ofSize: infoFontSize)
         
-        location.font = UIFont.systemFont(ofSize: infoFontSize)
+        locationLabel.font = UIFont.systemFont(ofSize: infoFontSize)
         
         accidentLabel.font = UIFont.systemFont(ofSize: highlightSize)
         personalLabel.font = UIFont.systemFont(ofSize: highlightSize)
