@@ -36,8 +36,8 @@ class VehicleCell: UITableViewCell {
     
     public func setData(listingData: Listing, images: [String: UIImage]) {
         vehicleImage.image = images[listingData.images.firstPhoto.medium]
-        let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         
+        let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model) \(listingData.trim)"
         titleLabel.text = vehicleTitle
         
         priceLabel.text = "\(formatPrice(value: listingData.currentPrice))"
