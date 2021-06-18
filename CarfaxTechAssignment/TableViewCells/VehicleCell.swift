@@ -39,21 +39,15 @@ class VehicleCell: UITableViewCell {
         let vehicleTitle = "\(listingData.year) \(listingData.make) \(listingData.model)"
         
         titleLabel.text = vehicleTitle
-        titleLabel.textColor = labelColor
         
         priceLabel.text = "\(formatPrice(value: listingData.currentPrice))"
-        priceLabel.textColor = labelColor
         
         let vehicleMileage = Double(listingData.mileage / 1000).rounded()
         mileageLabel.text = "| \(formatMileage(value: vehicleMileage))k Mi |"
-        mileageLabel.textColor = labelColor
-        
         let vehicleLocation = "\(listingData.dealer.city), \(listingData.dealer.state)"
         locationLabel.text = vehicleLocation
-        locationLabel.textColor = labelColor
         
         accidentLabel.text = listingData.accidentHistory.text
-        accidentLabel.textColor = labelColor
         accidentImageView.image = images[listingData.accidentHistory.iconUrl]
         
         var serviceRecordSuffix = String()
@@ -63,15 +57,12 @@ class VehicleCell: UITableViewCell {
             serviceRecordSuffix = "Records"
         }
         serviceHistoryLabel.text = "\(listingData.serviceHistory.number) \(listingData.serviceHistory.text) \(serviceRecordSuffix)"
-        serviceHistoryLabel.textColor = labelColor
         serviceHistoryImageView.image = images[listingData.serviceHistory.iconUrl]
         
         ownerHistoryLabel.text = "\(listingData.ownerHistory.text)"
-        ownerHistoryLabel.textColor = labelColor
         ownerHistoryImageView.image = images[listingData.ownerHistory.iconUrl]
         
         dealerPhoneNumber = listingData.dealer.phone
-        dealerPhoneButton.tintColor = .systemBlue
         dealerPhoneButton.setTitle(formatPhoneNumber(phoneNumber: dealerPhoneNumber), for: .normal)
     }
     
@@ -85,6 +76,15 @@ class VehicleCell: UITableViewCell {
         
         vehicleImage.layer.masksToBounds = true
         vehicleImage.layer.cornerRadius = 20
+        
+        titleLabel.textColor = labelColor
+        priceLabel.textColor = labelColor
+        mileageLabel.textColor = labelColor
+        locationLabel.textColor = labelColor
+        accidentLabel.textColor = labelColor
+        serviceHistoryLabel.textColor = labelColor
+        ownerHistoryLabel.textColor = labelColor
+        dealerPhoneButton.tintColor = .systemBlue
         
         configureFont(label: titleLabel, bold: true, size: titleFontSize)
         configureFont(label: priceLabel, bold: true, size: infoFontSize)
