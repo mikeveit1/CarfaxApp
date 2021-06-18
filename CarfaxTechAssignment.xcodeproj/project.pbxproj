@@ -25,6 +25,7 @@
 		AD1E7370267B94D100437DED /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1E736F267B94D000437DED /* Format.swift */; };
 		AD6B1D2E267BFC490024D390 /* ServiceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */; };
 		AD6B1D33267C119D0024D390 /* AccidentHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D32267C119D0024D390 /* AccidentHistory.swift */; };
+		AD6B1D3B267C1A330024D390 /* OwnerHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6B1D3A267C1A330024D390 /* OwnerHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		AD1E736F267B94D000437DED /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHistory.swift; sourceTree = "<group>"; };
 		AD6B1D32267C119D0024D390 /* AccidentHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccidentHistory.swift; sourceTree = "<group>"; };
+		AD6B1D3A267C1A330024D390 /* OwnerHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +163,13 @@
 			isa = PBXGroup;
 			children = (
 				AD1E72C9267AABEF00437DED /* Response.swift */,
+				AD1E7350267AB45700437DED /* Dealer.swift */,
 				AD1E72CE267AAC2E00437DED /* Listing.swift */,
-				AD6B1D32267C119D0024D390 /* AccidentHistory.swift */,
-				AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */,
 				AD1E734B267AB39E00437DED /* Images.swift */,
 				AD1E7355267AB75500437DED /* FirstPhoto.swift */,
-				AD1E7350267AB45700437DED /* Dealer.swift */,
+				AD6B1D32267C119D0024D390 /* AccidentHistory.swift */,
+				AD6B1D3A267C1A330024D390 /* OwnerHistory.swift */,
+				AD6B1D2D267BFC490024D390 /* ServiceHistory.swift */,
 			);
 			path = ResponseModel;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				AD1E7351267AB45700437DED /* Dealer.swift in Sources */,
 				AD6B1D33267C119D0024D390 /* AccidentHistory.swift in Sources */,
 				AD1E72BB267AA9D600437DED /* DataService.swift in Sources */,
+				AD6B1D3B267C1A330024D390 /* OwnerHistory.swift in Sources */,
 				AD1E735E267ABBBC00437DED /* VehicleListController.swift in Sources */,
 				AD6B1D2E267BFC490024D390 /* ServiceHistory.swift in Sources */,
 				AD1E72CF267AAC2E00437DED /* Listing.swift in Sources */,
