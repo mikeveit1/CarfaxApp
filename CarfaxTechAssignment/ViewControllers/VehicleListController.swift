@@ -67,14 +67,12 @@ class VehicleListController: UIViewController {
     }
     
     private func getImageFromData(stringUrl: String) -> UIImage {
-        var image = UIImage()
         let data = try? Data(contentsOf: URL(string: stringUrl)!)
         if let imageData = data {
-            image = ((UIImage(data: imageData) ?? UIImage(named: "noimage"))!)
+            return ((UIImage(data: imageData) ?? UIImage(named: "noimage"))!)
         } else {
-            image = (UIImage(named: "noimage")!)
+            return (UIImage(named: "noimage")!)
         }
-        return image
     }
 }
 
