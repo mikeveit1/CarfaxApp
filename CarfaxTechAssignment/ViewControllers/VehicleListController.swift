@@ -30,7 +30,6 @@ class VehicleListController: UIViewController {
         vehicleTable.delegate = self
         vehicleTable.dataSource = self
         vehicleTable.backgroundColor = view.backgroundColor
-        vehicleTable.reloadData()
     }
     
     private func configureNavBar() {
@@ -47,8 +46,8 @@ class VehicleListController: UIViewController {
                 let json = try decoder.decode(Response.self, from: data)
                 self.listings.append(contentsOf: json.listings)
                 self.totalListingCount = json.totalListingCount
-                self.setUpViews()
                 self.updateListingImages(listings: json.listings)
+                self.setUpViews()
                 self.vehicleTable.reloadData()
             } catch {
                 DispatchQueue.main.async {
